@@ -7,17 +7,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget titleSection = Container(
-      Color color = Theme.of(context).primaryColor;
-
+    Color color = Theme.of(context).primaryColor;
       Widget buttonSection = Row(
-        mainAxisAligment: MainAxisAligment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _builButtonColumn(color, Icons.call, 'CALL'),
-          _builButtonColumn(color, Icons.near_me, 'ROUTE'),
-          _builButtonColumn(color, Icons.share, 'SHARE'),
+          _buildButtonColumn(color, Icons.call, 'CALL'),
+          _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+          _buildButtonColumn(color, Icons.share, 'SHARE'),
         ],
       );
+
+    Widget titleSection = Container(
       Widget textSection = Container(
         padding: const EdgeInsets.all(32),
         child: const Text(
@@ -67,6 +67,7 @@ class MyApp extends StatelessWidget {
         body: Column(children: [
           titleSection, 
           buttonSection,
+          textSection,
           ],
         ),
         ),
