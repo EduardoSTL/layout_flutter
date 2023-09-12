@@ -17,8 +17,7 @@ class MyApp extends StatelessWidget {
         ],
       );
 
-    Widget titleSection = Container(
-      Widget textSection = Container(
+    Widget textSection = Container(
         padding: const EdgeInsets.all(32),
         child: const Text(
           'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
@@ -29,7 +28,9 @@ class MyApp extends StatelessWidget {
           'enjoyed here include rowing, and riding the summer toboggan run.',
         softWrap: true,
         ),
-      )
+      );
+
+    Widget titleSection = Container(
       padding: const EdgeInsets.all(32),
       child: Row(
         children: [Expanded(
