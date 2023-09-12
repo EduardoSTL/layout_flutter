@@ -5,6 +5,7 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  //! Metodos Widget(3):  
   @override
   Widget build(BuildContext context) {
     Color color = Theme.of(context).primaryColor;
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
           'lake, which warms to 20 degrees Celsius in the summer. Activities '
           'enjoyed here include rowing, and riding the summer toboggan run.',
         softWrap: true,
+        //* wrap sirve para ordenar el texto, corta desde cada enter
         ),
       );
 
