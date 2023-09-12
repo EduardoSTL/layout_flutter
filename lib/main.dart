@@ -8,6 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget titleSection = Container(
+      Color color = Theme.of(context).primaryColor;
+
+      Widget buttonSection = Row(
+        mainAxisAligment: MainAxisAligment.spaceEvenly,
+        children: [
+          _builButtonColumn(color, Icons.call, 'CALL'),
+          _builButtonColumn(color, Icons.near_me, 'ROUTE'),
+          _builButtonColumn(color, Icons.share, 'SHARE'),
+        ],
+      );
       padding: const EdgeInsets.all(32),
       child: Row(
         children: [Expanded(
