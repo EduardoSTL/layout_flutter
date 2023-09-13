@@ -3,11 +3,15 @@ import 'package:flutter/material.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  //* StatelessWidget son static 
+  //! constructor del widget
   const MyApp({super.key});
 
-  //! Metodos Widget(3):  
+  //! Metodos Widget(3): 
+  //* Este método describe cómo se debe construir la interfaz de usuario del widget:
   @override
   Widget build(BuildContext context) {
+    //* los Widget pueden cambiar de estado
     Color color = Theme.of(context).primaryColor;
       Widget buttonSection = Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
